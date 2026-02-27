@@ -8,6 +8,10 @@ const uint8_t FSR_PIN = A0;
 // Create variable to store sensor reading
 int fsrValue = 0; // current FSR ADC reading (0-1023 on 10-bit ADC)
 
+// TODO 7:
+// Threshold for detecting pressure from FSR
+const int FSR_THRESHOLD = 100; // adjust as needed
+
 void setup() {
 
     // TODO 3:
@@ -35,7 +39,7 @@ void loop() {
 
     // TODO 7:
     // Apply simple threshold logic (e.g., detect pressure)
-    if (fsrValue > 100) {   // adjust threshold as needed
+    if (fsrValue > FSR_THRESHOLD) {   // adjust threshold as needed
 
         // TODO 8:
         // Print pressure detection message

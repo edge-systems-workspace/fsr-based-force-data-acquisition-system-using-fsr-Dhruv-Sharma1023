@@ -43,7 +43,8 @@ void loop() {
 
         // TODO 8:
         // Print pressure detection message
-        Serial.println("Pressure Detected!");
+        Serial.print("Pressure Detected! ADC=");
+        Serial.println(fsrValue);
     } else {
         Serial.println("No Significant Pressure.");
     }

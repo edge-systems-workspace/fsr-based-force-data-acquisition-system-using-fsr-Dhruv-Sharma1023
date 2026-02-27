@@ -6,7 +6,7 @@ const uint8_t FSR_PIN = A0;
 
 // TODO 2:
 // Create variable to store sensor reading
-int fsrValue = 0;
+int fsrValue = 0; // current FSR ADC reading (0-1023 on 10-bit ADC)
 
 void setup() {
 
